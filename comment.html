@@ -22,7 +22,12 @@
     </script>
     <script>
         $(function() {
-            $(".cy-logo").hide();
+            setTimeout(hideCyLogo,1000);
+            setTimeout(hideCyLogo,2000);
+            function hideCyLogo(){
+                $(".cy-logo").hide();
+                $(".login-button").text("立即登录");
+            }
         })
     </script>
 </body>
